@@ -6,6 +6,30 @@
 
 > The app is native Android (Kotlin, Jetpack Compose, Material 3, Room). It is not React Native or Expo.
 
+**Just want the app?** [Download the APK](#download) and install it on any phone running Android 7.0 or newer.
+
+## Download
+
+[![Download APK](https://img.shields.io/badge/Download-APK%20v1.0-2ea44f?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ZainElabdeen/rassed-app/raw/main/releases/raseed.apk)
+
+**[⬇️ Download Raseed v1.0 (APK, 9.6 MB)](https://github.com/ZainElabdeen/rassed-app/raw/main/releases/raseed.apk)**
+
+| | |
+|---|---|
+| Version | 1.0 (version code 1) |
+| Requires | Android 7.0 (API 24) or newer |
+| Size | 9.6 MB |
+| SHA-256 | `7d6c5d35841ace74daf6d886100d9dd98296a87edbdd2d8c4cd543b385d48eb3` |
+
+### Install on your phone
+
+1. Open the download link above on the Android phone, or copy the APK to the phone.
+2. Tap the downloaded `raseed.apk`.
+3. If Android blocks it, allow **Install unknown apps** for your browser or file manager when prompted (Settings → Apps → *your browser* → Install unknown apps).
+4. Tap **Install**, then open **رصيد** from the app drawer.
+
+The app needs no account and no internet connection. To update later, install the newer APK over the old one; your data stays on the phone. Export a backup from **Settings** first, just in case.
+
 ## Features
 
 | Area | What it does |
@@ -109,6 +133,7 @@ Requirements: Android Studio with JDK 17 and the Android SDK (compile SDK 37).
 2. Choose a device or emulator running Android 7.0 (API 24) or newer, then press **Run**.
 3. Run the unit tests with `./gradlew testDebugUnitTest` from the `android/` folder, or from Android Studio's test runner.
 4. To build a file for installing or publishing, use **Build → Generate Signed App Bundle / APK** in Android Studio and sign it with your own key. The project has no signing configuration and contains no keys. Keep the keystore and its passwords out of the repository.
+5. To publish a new version for download, raise `versionCode` and `versionName` in `android/app/build.gradle.kts`, build a signed release APK with the same key, replace `releases/raseed.apk`, and update the version, size and SHA-256 in the Download section of both READMEs (`sha256sum releases/raseed.apk`).
 
 The unit tests cover balances, settlement, stock, date boundaries, money formatting, input validation, report totals, backup validation and search.
 

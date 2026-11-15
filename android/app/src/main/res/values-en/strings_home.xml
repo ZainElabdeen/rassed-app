@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_new_sale">New sale</string>
+    <string name="home_sales_month">Sales this month</string>
+    <string name="home_owed">Owed by customers</string>
+    <string name="home_all_time">All-time sales: %1$s</string>
+    <string name="home_opening_notice">This month\'s opening stock is not set for %1$d product(s)</string>
+    <string name="home_opening_action">Set stock</string>
+    <string name="home_balance_title">Credit balance</string>
+    <string name="home_empty_title">No products</string>
+    <string name="home_empty_message">Add the products you sell to see their balances here.</string>
+    <string name="home_empty_action">Add product</string>
+    <string name="home_latest_title">Latest sales</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_sale_title">%1$s · %2$s</string>
+    <string name="home_sale_supporting">%1$s · %2$s</string>
+</resources>

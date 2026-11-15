@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_new_sale">بيع جديد</string>
+    <string name="home_sales_month">مبيعات هذا الشهر</string>
+    <string name="home_owed">مستحق على العملاء</string>
+    <string name="home_all_time">إجمالي المبيعات الكلي: %1$s</string>
+    <string name="home_opening_notice">لم يُحدَّد رصيد بداية هذا الشهر لعدد %1$d من المنتجات</string>
+    <string name="home_opening_action">تحديد الرصيد</string>
+    <string name="home_balance_title">الرصيد</string>
+    <string name="home_empty_title">لا توجد منتجات</string>
+    <string name="home_empty_message">أضف المنتجات التي تبيعها لتظهر أرصدتها هنا.</string>
+    <string name="home_empty_action">إضافة منتج</string>
+    <string name="home_latest_title">آخر المبيعات</string>
+    <string name="home_see_all">عرض الكل</string>
+    <string name="home_sale_title">%1$s · %2$s</string>
+    <string name="home_sale_supporting">%1$s · %2$s</string>
+</resources>

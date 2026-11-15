@@ -1,0 +1,12 @@
+{
+  "target": "android",
+  "apps": [
+    {
+      "id": "android",
+      "path": "android",
+      "target": "android",
+      "applicationId": "com.injaz.app.a2a4d30b5220a45f0",
+      "starterGeneration": 2
+    }
+  ]
+}

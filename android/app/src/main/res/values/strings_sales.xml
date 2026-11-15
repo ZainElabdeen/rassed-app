@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sales_title">المبيعات</string>
+    <string name="sales_filter_all">الكل</string>
+    <string name="sales_new">بيع جديد</string>
+    <string name="sales_empty_title">لا توجد مبيعات بعد</string>
+    <string name="sales_empty_message">سجّل أول عملية بيع لتظهر هنا.</string>
+    <string name="sales_filter_empty">لا توجد مبيعات تطابق التصفية المختارة.</string>
+    <string name="sales_summary">%1$s عملية · الإجمالي %2$s</string>
+    <string name="sales_delete_title">حذف هذا البيع؟</string>
+    <string name="sales_delete_message">سيعود المبلغ إلى رصيد المخزون ويُعدَّل رصيد العميل. لا يمكن التراجع عن الحذف.</string>
+    <string name="sales_delete_desc">حذف البيع</string>
+    <string name="sales_delete_failed">تعذّر حذف البيع. حاول مرة أخرى.</string>
+
+    <string name="sales_new_title">بيع جديد</string>
+    <string name="sales_section_product">المنتج</string>
+    <string name="sales_section_method">طريقة الدفع</string>
+    <string name="sales_section_customer">العميل</string>
+    <string name="sales_choose_customer">اختيار عميل</string>
+    <string name="sales_change_customer">تغيير العميل</string>
+    <string name="sales_clear_customer">إزالة العميل</string>
+    <string name="sales_credit_note">البيع الآجل يحتاج إلى عميل، ويُضاف المبلغ إلى رصيده المستحق.</string>
+    <string name="sales_over_stock">المبلغ أكبر من الرصيد المتاح (%1$s). يمكنك المتابعة وحفظ البيع.</string>
+    <string name="sales_amount_invalid">أدخل مبلغاً صحيحاً أكبر من صفر.</string>
+    <string name="sales_save">حفظ البيع</string>
+    <string name="sales_save_failed">تعذّر حفظ البيع. حاول مرة أخرى.</string>
+    <string name="sales_no_products_title">لا توجد منتجات</string>
+    <string name="sales_no_products_message">أضف منتجاً أولاً من «المزيد ← المنتجات والمخزون» ثم سجّل البيع.</string>
+    <string name="sales_sheet_title">اختيار العميل</string>
+    <string name="sales_no_customers">لا يوجد عملاء بعد. أضف عميلاً من النموذج أدناه.</string>
+    <string name="sales_new_customer">عميل جديد</string>
+    <string name="sales_customer_name">الاسم</string>
+    <string name="sales_customer_phone">الهاتف (اختياري)</string>
+    <string name="sales_customer_add">إضافة وتحديد العميل</string>
+    <string name="sales_customer_name_required">الاسم مطلوب.</string>
+    <string name="sales_customer_failed">تعذّرت إضافة العميل. حاول مرة أخرى.</string>
+</resources>

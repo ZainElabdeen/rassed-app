@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_language_title">اللغة</string>
+    <string name="set_language_ar">العربية</string>
+    <string name="set_language_en">English</string>
+
+    <string name="set_backup_title">نسخة احتياطية</string>
+    <string name="set_backup_text">يحفظ الملف كل المنتجات والعملاء والمبيعات والدفعات وحركات المخزون، ويمكن استعادته على هاتف جديد.</string>
+    <string name="set_backup_save">حفظ نسخة في ملف</string>
+    <string name="set_backup_share">مشاركة النسخة</string>
+    <string name="set_share_chooser">مشاركة النسخة الاحتياطية</string>
+
+    <string name="set_restore_title">استعادة</string>
+    <string name="set_restore_text">اختر ملف نسخة احتياطية سبق حفظه. يُفحص الملف أولاً، ولا يتغير شيء قبل أن تؤكد.</string>
+    <string name="set_restore_pick">استعادة من ملف نسخة</string>
+
+    <string name="set_busy">جارٍ التنفيذ…</string>
+
+    <string name="set_import_confirm_title">استبدال كل البيانات؟</string>
+    <string name="set_import_confirm_message">الملف سليم.\nتاريخ النسخة: %1$s\nالمنتجات: %2$s\nالعملاء: %3$s\nالمبيعات: %4$s\nالدفعات: %5$s\nحركات المخزون: %6$s\n\nالاستعادة تستبدل كل البيانات الموجودة على هذا الهاتف ولا يمكن التراجع عنها.</string>
+    <string name="set_import_confirm_action">استبدال البيانات</string>
+
+    <string name="set_msg_saved">تم حفظ النسخة الاحتياطية.</string>
+    <string name="set_msg_write_failed">تعذّر كتابة الملف. حاول مرة أخرى.</string>
+    <string name="set_msg_read_failed">تعذّرت قراءة الملف. لم تتغير بيانات الهاتف.</string>
+    <string name="set_msg_too_large">الملف كبير جداً (أكثر من 20 ميغابايت). رُفض الملف ولم تتغير بيانات الهاتف.</string>
+    <string name="set_msg_import_done">تمت الاستعادة. البيانات الآن مطابقة للنسخة.</string>
+    <string name="set_msg_import_failed">فشلت الاستعادة. لم تتغير بيانات الهاتف.</string>
+
+    <string name="set_err_unreadable">رُفض الملف: لا يمكن قراءته أو أنه تالف. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_wrong_format">رُفض الملف: ليس نسخة احتياطية من هذا التطبيق. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_newer_version">رُفض الملف: أُنشئ بإصدار أحدث من التطبيق. حدّث التطبيق ثم أعد المحاولة. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_bad_checksum">رُفض الملف: محتواه تغيّر أو تلف بعد حفظه. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_bad_counts">رُفض الملف: أعداد السجلات لا تطابق محتواه. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_duplicate_id">رُفض الملف: فيه سجلات مكررة. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_bad_reference">رُفض الملف: فيه مبيعات أو دفعات تشير إلى منتج أو عميل غير موجود. لم تتغير بيانات الهاتف.</string>
+    <string name="set_err_bad_value">رُفض الملف: فيه قيم غير صالحة. لم تتغير بيانات الهاتف.</string>
+</resources>

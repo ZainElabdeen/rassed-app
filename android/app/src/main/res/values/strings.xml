@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">رصيد</string>
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_sales">المبيعات</string>
+    <string name="nav_customers">العملاء</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_more">المزيد</string>
+
+    <string name="currency_sdg">ج.س</string>
+    <string name="amount_fmt">%1$s ج.س</string>
+
+    <string name="method_cash">نقدي</string>
+    <string name="method_bankak">بنكك</string>
+    <string name="method_credit">آجل</string>
+
+    <string name="status_paid">مدفوع</string>
+    <string name="status_partial">مدفوع جزئياً</string>
+    <string name="status_unpaid">غير مدفوع</string>
+
+    <string name="action_save">حفظ</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_confirm">تأكيد</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_add">إضافة</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_ok">موافق</string>
+    <string name="action_retry">إعادة المحاولة</string>
+
+    <string name="error_generic_title">حدث خطأ</string>
+    <string name="error_generic_message">تعذّر تحميل البيانات. حاول مرة أخرى.</string>
+    <string name="loading">جارٍ التحميل…</string>
+
+    <string name="no_customer">بدون عميل</string>
+    <string name="stock_low">رصيد منخفض</string>
+    <string name="stock_of_total">من أصل %1$s</string>
+    <string name="stock_no_opening">لم يُحدَّد رصيد بداية الشهر</string>
+    <string name="stock_negative">المبيعات تجاوزت الرصيد</string>
+    <string name="field_amount">المبلغ</string>
+    <string name="field_date">التاريخ</string>
+
+    <string name="more_title">المزيد</string>
+    <string name="more_products">المنتجات والمخزون</string>
+    <string name="more_products_hint">إضافة المنتجات وتحديد رصيد بداية الشهر</string>
+    <string name="more_settings">الإعدادات والنسخ الاحتياطي</string>
+    <string name="more_settings_hint">اللغة وتصدير البيانات واستيرادها</string>
+</resources>

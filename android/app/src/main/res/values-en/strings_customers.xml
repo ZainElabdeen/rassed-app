@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cust_title">Customers</string>
+    <string name="cust_add">Add customer</string>
+    <string name="cust_total_owed">Total owed by customers</string>
+    <string name="cust_no_balance">No balance</string>
+    <string name="cust_empty_title">No customers yet</string>
+    <string name="cust_empty_message">Add a customer to record pay-later sales and payments.</string>
+    <string name="cust_form_add_title">Add customer</string>
+    <string name="cust_form_edit_title">Edit customer</string>
+    <string name="cust_field_name">Name</string>
+    <string name="cust_field_phone">Phone (optional)</string>
+    <string name="cust_name_required">Name is required</string>
+    <string name="cust_save_failed">Could not save. Try again.</string>
+    <string name="cust_detail_title">Customer</string>
+    <string name="cust_not_found_title">Customer not found</string>
+    <string name="cust_not_found_message">This customer may no longer be in the data.</string>
+    <string name="cust_balance_label">Outstanding balance</string>
+    <string name="cust_phone_fmt">Phone: %1$s</string>
+    <string name="cust_types_title">Credit types bought</string>
+    <string name="cust_types_empty">This customer has not bought any credit yet.</string>
+    <string name="cust_purchases_count">Purchases: %1$d</string>
+    <string name="cust_history_title">History</string>
+    <string name="cust_history_empty">No sales or payments for this customer yet.</string>
+    <string name="cust_sale_title">%1$s — %2$s</string>
+    <string name="cust_payment_title">Payment received — %1$s</string>
+    <string name="cust_meta_fmt">%1$s · %2$s</string>
+    <string name="cust_meta_extra_fmt">%1$s · %2$s · %3$s</string>
+    <string name="cust_paid_so_far">Paid: %1$s</string>
+    <string name="cust_received">Received</string>
+    <string name="cust_record_payment">Record payment</string>
+    <string name="cust_payment_sheet_title">Record payment</string>
+    <string name="cust_full_balance">Full balance</string>
+    <string name="cust_field_method">Payment method</string>
+    <string name="cust_field_note">Note (optional)</string>
+    <string name="cust_payment_date">Payment date</string>
+    <string name="cust_delete">Delete customer</string>
+    <string name="cust_delete_title">Delete this customer?</string>
+    <string name="cust_delete_message">%1$s will be removed from the customer list. Past sales and payments stay in the sales history and reports, and stock does not change. This cannot be undone.</string>
+    <string name="cust_delete_blocked_title">Cannot delete this customer yet</string>
+    <string name="cust_delete_blocked_message">This customer owes %1$s. Record a payment that covers the balance first, then delete.</string>
+</resources>

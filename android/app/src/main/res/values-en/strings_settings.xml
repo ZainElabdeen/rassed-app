@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_language_title">Language</string>
+    <string name="set_language_ar">العربية</string>
+    <string name="set_language_en">English</string>
+
+    <string name="set_backup_title">Backup</string>
+    <string name="set_backup_text">The file holds all products, customers, sales, payments and stock movements, and can be restored on a new phone.</string>
+    <string name="set_backup_save">Save backup to a file</string>
+    <string name="set_backup_share">Share backup</string>
+    <string name="set_share_chooser">Share backup</string>
+
+    <string name="set_restore_title">Restore</string>
+    <string name="set_restore_text">Choose a backup file you saved before. The file is checked first, and nothing changes until you confirm.</string>
+    <string name="set_restore_pick">Restore from a backup file</string>
+
+    <string name="set_busy">Working…</string>
+
+    <string name="set_import_confirm_title">Replace all data?</string>
+    <string name="set_import_confirm_message">The file is valid.\nBackup date: %1$s\nProducts: %2$s\nCustomers: %3$s\nSales: %4$s\nPayments: %5$s\nStock movements: %6$s\n\nRestoring replaces all data on this phone and cannot be undone.</string>
+    <string name="set_import_confirm_action">Replace data</string>
+
+    <string name="set_msg_saved">Backup saved.</string>
+    <string name="set_msg_write_failed">Could not write the file. Try again.</string>
+    <string name="set_msg_read_failed">Could not read the file. The phone\'s data was not changed.</string>
+    <string name="set_msg_too_large">The file is too large (over 20 MB). It was rejected and the phone\'s data was not changed.</string>
+    <string name="set_msg_import_done">Restored. Your data now matches the backup.</string>
+    <string name="set_msg_import_failed">Restore failed. The phone\'s data was not changed.</string>
+
+    <string name="set_err_unreadable">File rejected: it cannot be read or is damaged. The phone\'s data was not changed.</string>
+    <string name="set_err_wrong_format">File rejected: it is not a backup from this app. The phone\'s data was not changed.</string>
+    <string name="set_err_newer_version">File rejected: it was made by a newer version of the app. Update the app and try again. The phone\'s data was not changed.</string>
+    <string name="set_err_bad_checksum">File rejected: its content changed or was damaged after saving. The phone\'s data was not changed.</string>
+    <string name="set_err_bad_counts">File rejected: the record counts do not match its content. The phone\'s data was not changed.</string>
+    <string name="set_err_duplicate_id">File rejected: it contains duplicate records. The phone\'s data was not changed.</string>
+    <string name="set_err_bad_reference">File rejected: it has sales or payments that point to a missing product or customer. The phone\'s data was not changed.</string>
+    <string name="set_err_bad_value">File rejected: it contains invalid values. The phone\'s data was not changed.</string>
+</resources>

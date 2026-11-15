@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Raseed</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_sales">Sales</string>
+    <string name="nav_customers">Customers</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_more">More</string>
+
+    <string name="currency_sdg">SDG</string>
+    <string name="amount_fmt">%1$s SDG</string>
+
+    <string name="method_cash">Cash</string>
+    <string name="method_bankak">Bankak</string>
+    <string name="method_credit">Pay later</string>
+
+    <string name="status_paid">Paid</string>
+    <string name="status_partial">Partly paid</string>
+    <string name="status_unpaid">Unpaid</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_back">Back</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="action_close">Close</string>
+    <string name="action_ok">OK</string>
+    <string name="action_retry">Try again</string>
+
+    <string name="error_generic_title">Something went wrong</string>
+    <string name="error_generic_message">The data could not be loaded. Please try again.</string>
+    <string name="loading">Loading…</string>
+
+    <string name="no_customer">No customer</string>
+    <string name="stock_low">Low stock</string>
+    <string name="stock_of_total">of %1$s</string>
+    <string name="stock_no_opening">This month\'s opening stock is not set</string>
+    <string name="stock_negative">Sales exceed the stock</string>
+    <string name="field_amount">Amount</string>
+    <string name="field_date">Date</string>
+
+    <string name="more_title">More</string>
+    <string name="more_products">Products and stock</string>
+    <string name="more_products_hint">Add products and set the month\'s opening stock</string>
+    <string name="more_settings">Settings and backup</string>
+    <string name="more_settings_hint">Language, export and import of your data</string>
+</resources>

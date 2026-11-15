@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_open">بحث</string>
+    <string name="search_title">بحث</string>
+    <string name="search_hint">ابحث بالاسم أو الهاتف أو المبلغ أو التاريخ</string>
+    <string name="search_clear">مسح البحث</string>
+    <string name="search_idle_title">ابحث في كل بياناتك</string>
+    <string name="search_idle_message">العملاء والمنتجات والمبيعات والدفعات وسجل المخزون. اكتب اسماً أو رقم هاتف أو مبلغاً أو سبباً.</string>
+    <string name="search_none_title">لا نتائج</string>
+    <string name="search_none_message">لم نجد ما يطابق «%1$s». جرّب كلمة أخرى.</string>
+    <string name="search_section_customers">العملاء (%1$d)</string>
+    <string name="search_section_products">المنتجات (%1$d)</string>
+    <string name="search_section_sales">المبيعات (%1$d)</string>
+    <string name="search_section_payments">الدفعات (%1$d)</string>
+    <string name="search_section_stock">سجل المخزون (%1$d)</string>
+    <string name="search_product_hint">افتح سجل المخزون</string>
+    <string name="search_stock_opening">رصيد بداية الشهر</string>
+    <string name="search_stock_add">إضافة رصيد</string>
+    <string name="search_stock_deduct">خصم رصيد</string>
+    <string name="search_stock_title">%1$s — %2$s: %3$s</string>
+    <string name="deleted_customer">عميل محذوف</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prod_title">المنتجات والمخزون</string>
+    <string name="prod_add_product">إضافة منتج</string>
+    <string name="prod_name_label">اسم المنتج</string>
+    <string name="prod_set_opening">تحديد رصيد بداية هذا الشهر</string>
+    <string name="prod_remove">حذف</string>
+    <string name="prod_remove_title">حذف %1$s؟</string>
+    <string name="prod_remove_message">سيختفي المنتج من شاشة البيع الجديد، وتبقى مبيعاته السابقة وتقاريره كما هي.</string>
+    <string name="prod_opening_missing">لم يُحدَّد رصيد البداية</string>
+    <string name="prod_empty_title">لا توجد منتجات</string>
+    <string name="prod_empty_message">المنتجات هي أنواع الرصيد التي تبيعها، مثل زين أو سوداني. أضف منتجاً لتبدأ البيع.</string>
+    <string name="prod_save_failed">تعذّر الحفظ. حاول مرة أخرى.</string>
+
+    <string name="prod_add_stock">إضافة رصيد</string>
+    <string name="prod_deduct_stock">خصم رصيد</string>
+    <string name="prod_opening_stock">رصيد البداية</string>
+    <string name="prod_add_title">إضافة رصيد إلى المخزون</string>
+    <string name="prod_deduct_title">خصم رصيد من المخزون</string>
+    <string name="prod_reason_label">السبب</string>
+    <string name="prod_reason_purchase">شراء جديد</string>
+    <string name="prod_reason_correction">تصحيح</string>
+    <string name="prod_reason_loss">فقد</string>
+    <string name="prod_opening_title">رصيد بداية الشهر</string>
+    <string name="prod_opening_note">يُسجَّل المبلغ بتاريخ أول يوم من الشهر الحالي، ويحل محل رصيد البداية السابق لهذا الشهر.</string>
+
+    <string name="prod_log_title">سجل المخزون</string>
+    <string name="prod_log_empty">لا توجد حركات مخزون لهذا المنتج بعد.</string>
+    <string name="prod_kind_opening">رصيد بداية الشهر</string>
+    <string name="prod_kind_add">إضافة رصيد</string>
+    <string name="prod_kind_deduct">خصم رصيد</string>
+    <string name="prod_sold_since_opening">المبيعات منذ رصيد البداية: %1$s</string>
+    <string name="prod_sold_total">إجمالي المبيعات: %1$s</string>
+    <string name="prod_not_found_title">المنتج غير موجود</string>
+    <string name="prod_not_found_message">ربما تم حذف هذا المنتج.</string>
+</resources>

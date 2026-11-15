@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sales_title">Sales</string>
+    <string name="sales_filter_all">All</string>
+    <string name="sales_new">New sale</string>
+    <string name="sales_empty_title">No sales yet</string>
+    <string name="sales_empty_message">Record your first sale and it will show up here.</string>
+    <string name="sales_filter_empty">No sales match the chosen filters.</string>
+    <string name="sales_summary">%1$s sales · Total %2$s</string>
+    <string name="sales_delete_title">Delete this sale?</string>
+    <string name="sales_delete_message">The amount goes back into stock and the customer balance is adjusted. This cannot be undone.</string>
+    <string name="sales_delete_desc">Delete sale</string>
+    <string name="sales_delete_failed">Could not delete the sale. Try again.</string>
+
+    <string name="sales_new_title">New sale</string>
+    <string name="sales_section_product">Product</string>
+    <string name="sales_section_method">Payment method</string>
+    <string name="sales_section_customer">Customer</string>
+    <string name="sales_choose_customer">Choose customer</string>
+    <string name="sales_change_customer">Change customer</string>
+    <string name="sales_clear_customer">Remove customer</string>
+    <string name="sales_credit_note">Pay later needs a customer. The amount is added to their balance.</string>
+    <string name="sales_over_stock">The amount is more than the available stock (%1$s). You can still save the sale.</string>
+    <string name="sales_amount_invalid">Enter a whole amount greater than zero.</string>
+    <string name="sales_save">Save sale</string>
+    <string name="sales_save_failed">Could not save the sale. Try again.</string>
+    <string name="sales_no_products_title">No products</string>
+    <string name="sales_no_products_message">Add a product first from More, then Products and stock, then record the sale.</string>
+    <string name="sales_sheet_title">Choose customer</string>
+    <string name="sales_no_customers">No customers yet. Add one with the form below.</string>
+    <string name="sales_new_customer">New customer</string>
+    <string name="sales_customer_name">Name</string>
+    <string name="sales_customer_phone">Phone (optional)</string>
+    <string name="sales_customer_add">Add and select customer</string>
+    <string name="sales_customer_name_required">Name is required.</string>
+    <string name="sales_customer_failed">Could not add the customer. Try again.</string>
+</resources>

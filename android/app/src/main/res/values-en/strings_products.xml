@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prod_title">Products and stock</string>
+    <string name="prod_add_product">Add product</string>
+    <string name="prod_name_label">Product name</string>
+    <string name="prod_set_opening">Set this month\'s opening stock</string>
+    <string name="prod_remove">Remove</string>
+    <string name="prod_remove_title">Remove %1$s?</string>
+    <string name="prod_remove_message">The product will disappear from new sales, but its past sales and reports stay intact.</string>
+    <string name="prod_opening_missing">Opening not set</string>
+    <string name="prod_empty_title">No products</string>
+    <string name="prod_empty_message">Products are the kinds of credit you sell, such as Zain or Sudani. Add a product to start selling.</string>
+    <string name="prod_save_failed">Could not save. Try again.</string>
+
+    <string name="prod_add_stock">Add stock</string>
+    <string name="prod_deduct_stock">Deduct stock</string>
+    <string name="prod_opening_stock">Opening stock</string>
+    <string name="prod_add_title">Add stock</string>
+    <string name="prod_deduct_title">Deduct stock</string>
+    <string name="prod_reason_label">Reason</string>
+    <string name="prod_reason_purchase">New purchase</string>
+    <string name="prod_reason_correction">Correction</string>
+    <string name="prod_reason_loss">Loss</string>
+    <string name="prod_opening_title">Opening stock for the month</string>
+    <string name="prod_opening_note">The amount is dated the first day of the current month and replaces this month\'s earlier opening stock.</string>
+
+    <string name="prod_log_title">Stock log</string>
+    <string name="prod_log_empty">No stock movements for this product yet.</string>
+    <string name="prod_kind_opening">Opening stock</string>
+    <string name="prod_kind_add">Added</string>
+    <string name="prod_kind_deduct">Deducted</string>
+    <string name="prod_sold_since_opening">Sold since opening: %1$s</string>
+    <string name="prod_sold_total">Total sold: %1$s</string>
+    <string name="prod_not_found_title">Product not found</string>
+    <string name="prod_not_found_message">This product may have been removed.</string>
+</resources>

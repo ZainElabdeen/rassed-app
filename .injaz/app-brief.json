@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "name": "رصيد",
+  "language": "ar",
+  "kind": "business-app",
+  "surface": "app",
+  "scale": "large",
+  "home": "work-queue",
+  "domain": "resale of mobile airtime / top-up credit in Sudan",
+  "users": "one airtime seller on one phone, offline, often one-handed, in Arabic",
+  "job": "Record each credit sale in a few taps so stock, customer debts and the month's totals stay true, and hand over a PDF report or a full backup when needed",
+  "place": { "setting": "Sudan", "people": "Sudanese mobile-credit sellers", "look": "everyday shop counter", "real": [] },
+  "features": [
+    { "id": "dashboard", "does": "Total sales, total owed by customers and remaining stock per product", "screen": "home" },
+    { "id": "new-sale", "does": "Sell credit: product, amount, optional customer, cash / Bankak / pay later", "screen": "new-sale" },
+    { "id": "sales-history", "does": "Browse and filter sales by product and payment, delete a sale", "screen": "sales" },
+    { "id": "customers", "does": "Add, edit, delete (only when nothing is owed) and view customers with purchased credit types, sales, payments and balance", "screen": "customer-detail" },
+    { "id": "search", "does": "Search customers, products, sales, payments and the stock log by name, phone, amount, method, note or date", "screen": "search" },
+    { "id": "customer-payments", "does": "Record a later payment against a customer with its own date", "screen": "customer-detail" },
+    { "id": "products-stock", "does": "Add or remove products, set month opening stock, add or deduct stock with a reason, see the log", "screen": "products" },
+    { "id": "reports", "does": "Monthly and date-range reports on screen, exported as Arabic RTL PDF to share or print", "screen": "reports" },
+    { "id": "backup", "does": "Export all data to one file, import with validation, switch language", "screen": "settings" }
+  ],
+  "screens": [
+    { "id": "home", "route": "ui/home/HomeScreen.kt", "primary": "New sale", "states": ["loading", "empty", "list", "error"] },
+    { "id": "sales", "route": "ui/sales/SalesScreen.kt", "primary": "New sale", "states": ["loading", "empty", "list"] },
+    { "id": "new-sale", "route": "ui/sales/NewSaleScreen.kt", "primary": "Save sale", "states": ["form", "error"] },
+    { "id": "customers", "route": "ui/customers/CustomersScreen.kt", "primary": "Add customer", "states": ["loading", "empty", "list"] },
+    { "id": "customer-detail", "route": "ui/customers/CustomerDetailScreen.kt", "primary": "Record payment", "states": ["loading", "empty", "list"] },
+    { "id": "products", "route": "ui/products/ProductsScreen.kt", "primary": "Add product", "states": ["loading", "empty", "list"] },
+    { "id": "stock-log", "route": "ui/products/StockLogScreen.kt", "primary": "Adjust stock", "states": ["empty", "list"] },
+    { "id": "reports", "route": "ui/reports/ReportsScreen.kt", "primary": "Export PDF", "states": ["loading", "empty", "report"] },
+    { "id": "settings", "route": "ui/settings/SettingsScreen.kt", "primary": "Export backup", "states": ["idle", "importing", "error"] },
+    { "id": "more", "route": "ui/more/MoreScreen.kt", "primary": "Open products", "states": ["list"] },
+    { "id": "search", "route": "ui/search/SearchScreen.kt", "primary": "Search", "states": ["loading", "empty", "list", "error"] }
+  ],
+  "navigation": "tabs",
+  "entities": [
+    { "name": "Product", "fields": "id text stable, name text, sortOrder int, archived bool (soft delete), createdAt date" },
+    { "name": "Customer", "fields": "id text, name text, phone text?, createdAt date" },
+    { "name": "Sale", "fields": "id text, productId ref Product, productName text snapshot, amount money, customerId ref Customer?, createdAt date, method enum CASH|BANKAK|CREDIT" },
+    { "name": "Payment", "fields": "id text, customerId ref Customer, amount money, paidAt date, method enum CASH|BANKAK, note text?" },
+    { "name": "StockEntry", "fields": "id text, productId ref Product, kind enum OPENING|ADD|DEDUCT, amount money, reason text, createdAt date" }
+  ],
+  "data": { "store": "device", "auth": "none", "roles": [] },
+  "design": { "thesis": "Civic: white, a trustworthy deep green, one amber for notices; plain Arabic words, large touch targets, nothing decorative", "density": "regular", "appearance": "light", "tokens": "ui/theme/Theme.kt" },
+  "later": ["Purchase prices and profit"],
+  "gaps": [
+    { "feature": "Bankak payment link", "needs": "Bankak has no integration here; Bankak is only a payment label the seller records by hand", "shown": "hidden" },
+    { "feature": "Accounts and sync between devices", "needs": "Injaz Cloud is not available to android apps; backup file is the way to move data", "shown": "hidden" },
+    { "feature": "Custom PDF font", "needs": "The PDF uses the phone's own Arabic font; a .ttf can be added to res/font", "shown": "hidden" }
+  ],
+  "decisions": [
+    "Platform is native Android (Kotlin, Compose, Room), not React Native: the project cannot be converted",
+    "Sale amount is the credit value sold and reduces stock 1:1; amounts are whole Sudanese pounds",
+    "Customer optional for cash and Bankak, required for pay later",
+    "A payment settles the customer's oldest credit sales first",
+    "A customer who owes money cannot be deleted; deleting removes only the customer, past sales and payments stay (shown as deleted customer) so stock, totals and reports do not change; backups accept records of deleted customers",
+    "Opening stock is dated at the start of its month and replaces that month's earlier opening",
+    "Import replaces all data inside one transaction after validation and confirmation",
+    "Digits are Latin (1,500); language switch Arabic/English in settings; Arabic is RTL"
+  ]
+}

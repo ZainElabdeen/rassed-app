@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_open">Search</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search by name, phone, amount or date</string>
+    <string name="search_clear">Clear search</string>
+    <string name="search_idle_title">Search all your data</string>
+    <string name="search_idle_message">Customers, products, sales, payments and the stock log. Type a name, phone number, amount or reason.</string>
+    <string name="search_none_title">No results</string>
+    <string name="search_none_message">Nothing matches “%1$s”. Try another word.</string>
+    <string name="search_section_customers">Customers (%1$d)</string>
+    <string name="search_section_products">Products (%1$d)</string>
+    <string name="search_section_sales">Sales (%1$d)</string>
+    <string name="search_section_payments">Payments (%1$d)</string>
+    <string name="search_section_stock">Stock log (%1$d)</string>
+    <string name="search_product_hint">Open the stock log</string>
+    <string name="search_stock_opening">Month opening stock</string>
+    <string name="search_stock_add">Stock added</string>
+    <string name="search_stock_deduct">Stock deducted</string>
+    <string name="search_stock_title">%1$s — %2$s: %3$s</string>
+    <string name="deleted_customer">Deleted customer</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cust_title">العملاء</string>
+    <string name="cust_add">إضافة عميل</string>
+    <string name="cust_total_owed">إجمالي المستحق على العملاء</string>
+    <string name="cust_no_balance">لا رصيد مستحق</string>
+    <string name="cust_empty_title">لا يوجد عملاء بعد</string>
+    <string name="cust_empty_message">أضف عميلاً لتسجّل له المبيعات الآجلة والدفعات.</string>
+    <string name="cust_form_add_title">إضافة عميل</string>
+    <string name="cust_form_edit_title">تعديل بيانات العميل</string>
+    <string name="cust_field_name">الاسم</string>
+    <string name="cust_field_phone">رقم الهاتف (اختياري)</string>
+    <string name="cust_name_required">الاسم مطلوب</string>
+    <string name="cust_save_failed">تعذّر الحفظ. حاول مرة أخرى.</string>
+    <string name="cust_detail_title">العميل</string>
+    <string name="cust_not_found_title">العميل غير موجود</string>
+    <string name="cust_not_found_message">ربما لم يعد هذا العميل موجوداً في البيانات.</string>
+    <string name="cust_balance_label">الرصيد المستحق</string>
+    <string name="cust_phone_fmt">الهاتف: %1$s</string>
+    <string name="cust_types_title">أنواع الرصيد المشتراة</string>
+    <string name="cust_types_empty">لم يشترِ هذا العميل أي رصيد بعد.</string>
+    <string name="cust_purchases_count">عدد المشتريات: %1$d</string>
+    <string name="cust_history_title">السجل</string>
+    <string name="cust_history_empty">لا مبيعات ولا دفعات لهذا العميل بعد.</string>
+    <string name="cust_sale_title">%1$s — %2$s</string>
+    <string name="cust_payment_title">دفعة مستلمة — %1$s</string>
+    <string name="cust_meta_fmt">%1$s · %2$s</string>
+    <string name="cust_meta_extra_fmt">%1$s · %2$s · %3$s</string>
+    <string name="cust_paid_so_far">المدفوع: %1$s</string>
+    <string name="cust_received">مستلمة</string>
+    <string name="cust_record_payment">تسجيل دفعة</string>
+    <string name="cust_payment_sheet_title">تسجيل دفعة</string>
+    <string name="cust_full_balance">الرصيد كاملاً</string>
+    <string name="cust_field_method">طريقة الدفع</string>
+    <string name="cust_field_note">ملاحظة (اختياري)</string>
+    <string name="cust_payment_date">تاريخ الدفعة</string>
+    <string name="cust_delete">حذف العميل</string>
+    <string name="cust_delete_title">حذف العميل؟</string>
+    <string name="cust_delete_message">سيُحذف %1$s من قائمة العملاء. تبقى مبيعاته ودفعاته السابقة في سجل المبيعات والتقارير، ولا يتغير المخزون. لا يمكن التراجع.</string>
+    <string name="cust_delete_blocked_title">لا يمكن حذف العميل الآن</string>
+    <string name="cust_delete_blocked_message">على هذا العميل رصيد مستحق قدره %1$s. سجّل دفعة تغطي الرصيد أولاً ثم احذفه.</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rep_title">Reports</string>
+    <string name="rep_mode_month">Monthly</string>
+    <string name="rep_mode_custom">Custom range</string>
+    <string name="rep_prev_month">Previous month</string>
+    <string name="rep_next_month">Next month</string>
+    <string name="rep_from">From</string>
+    <string name="rep_to">To</string>
+    <string name="rep_range_error">The end date is before the start date. Change one of them.</string>
+
+    <string name="rep_summary_total">Total sales</string>
+    <string name="rep_summary_count">%1$s sales</string>
+    <string name="rep_credit_given">Credit given (pay later)</string>
+    <string name="rep_payments_received">Payments received</string>
+    <string name="rep_owed_now">Owed by customers now</string>
+    <string name="rep_by_product">Sales by product</string>
+    <string name="rep_by_method">Sales by payment method</string>
+    <string name="rep_sales_list">Sales table</string>
+    <string name="rep_row_count">%1$s sales</string>
+
+    <string name="rep_empty_title">No sales in this period</string>
+    <string name="rep_empty_message">Pick another period or record a new sale.</string>
+
+    <string name="rep_export_pdf">Export PDF</string>
+    <string name="rep_share">Share</string>
+    <string name="rep_print">Print</string>
+    <string name="rep_pdf_ready">The report file is ready</string>
+    <string name="rep_pdf_ready_hint">Share the file or print it.</string>
+    <string name="rep_pdf_failed">Could not create the PDF. Try again.</string>
+    <string name="rep_share_title">Share report</string>
+    <string name="rep_print_job">Raseed report</string>
+
+    <string name="rep_month_1">January</string>
+    <string name="rep_month_2">February</string>
+    <string name="rep_month_3">March</string>
+    <string name="rep_month_4">April</string>
+    <string name="rep_month_5">May</string>
+    <string name="rep_month_6">June</string>
+    <string name="rep_month_7">July</string>
+    <string name="rep_month_8">August</string>
+    <string name="rep_month_9">September</string>
+    <string name="rep_month_10">October</string>
+    <string name="rep_month_11">November</string>
+    <string name="rep_month_12">December</string>
+
+    <string name="rep_pdf_title">Sales report</string>
+    <string name="rep_pdf_period">Period: %1$s to %2$s</string>
+    <string name="rep_pdf_generated">Issued: %1$s</string>
+    <string name="rep_pdf_summary">Summary</string>
+    <string name="rep_pdf_total_sales">Total sales</string>
+    <string name="rep_pdf_sales_count">Number of sales</string>
+    <string name="rep_pdf_credit_given">Credit given (pay later)</string>
+    <string name="rep_pdf_payments_received">Payments received</string>
+    <string name="rep_pdf_outstanding">Owed by customers at issue time</string>
+    <string name="rep_pdf_by_product">Sales by product</string>
+    <string name="rep_pdf_by_method">Sales by payment method</string>
+    <string name="rep_pdf_sales">Sales table</string>
+    <string name="rep_pdf_payments">Payments received from customers</string>
+    <string name="rep_pdf_col_date">Date</string>
+    <string name="rep_pdf_col_product">Product</string>
+    <string name="rep_pdf_col_customer">Customer</string>
+    <string name="rep_pdf_col_method">Payment</string>
+    <string name="rep_pdf_col_amount">Amount</string>
+    <string name="rep_pdf_col_status">Status</string>
+    <string name="rep_pdf_col_count">Count</string>
+    <string name="rep_pdf_col_note">Note</string>
+    <string name="rep_pdf_no_sales">No sales in this period</string>
+    <string name="rep_pdf_page">Page %1$s</string>
+</resources>

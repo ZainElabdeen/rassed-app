@@ -1,0 +1,69 @@
+# Every library an Injaz android app can use. The build runs offline against the
+# template's dependency cache, so a library that is not listed here cannot be
+# resolved: add a line here only for an alias below, never a new coordinate.
+
+[versions]
+agp = "9.4.1"
+kotlin = "2.4.20"
+ksp = "2.3.12"
+composeBom = "2026.09.00"
+materialIcons = "1.7.8"
+activityCompose = "1.13.0"
+coreKtx = "1.18.0"
+lifecycle = "2.11.0"
+navigation = "2.10.2"
+room = "2.8.5"
+datastore = "1.1.7"
+coroutines = "1.10.2"
+serialization = "1.9.0"
+ktor = "3.2.3"
+retrofit = "3.0.0"
+coil = "3.3.0"
+junit = "4.13.2"
+# 3D: Filament through SceneView (work 20260929-game-models); needs Kotlin 2.4.
+sceneview = "4.48.0"
+# Game engines (work 20261014-android-games-best-in-class): Box2D v3 and Oboe through Injaz's own
+# libraries on Maven Central, and Bullet through Libbulletjme. The game kits' install says which
+# lines to add; a project that is not a game declares none of them.
+injazBox2d = "1.0.0"
+injazAudio = "1.0.0"
+bulletjme = "23.2.0"
+
+[libraries]
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+sceneview = { module = "io.github.sceneview:sceneview", version.ref = "sceneview" }
+injaz-box2d = { module = "io.github.techno-sd:injaz-box2d", version.ref = "injazBox2d" }
+injaz-audio = { module = "io.github.techno-sd:injaz-audio", version.ref = "injazAudio" }
+bulletjme-android = { module = "com.github.stephengold:Libbulletjme-Android", version.ref = "bulletjme" }
+bulletjme = { module = "com.github.stephengold:Libbulletjme-Linux64", version.ref = "bulletjme" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "materialIcons" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-kotlinx-serialization = { module = "com.squareup.retrofit2:converter-kotlinx-serialization", version.ref = "retrofit" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

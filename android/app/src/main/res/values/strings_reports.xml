@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rep_title">التقارير</string>
+    <string name="rep_mode_month">شهري</string>
+    <string name="rep_mode_custom">نطاق تواريخ</string>
+    <string name="rep_prev_month">الشهر السابق</string>
+    <string name="rep_next_month">الشهر التالي</string>
+    <string name="rep_from">من</string>
+    <string name="rep_to">إلى</string>
+    <string name="rep_range_error">تاريخ النهاية قبل تاريخ البداية. غيّر أحد التاريخين.</string>
+
+    <string name="rep_summary_total">إجمالي المبيعات</string>
+    <string name="rep_summary_count">%1$s عملية بيع</string>
+    <string name="rep_credit_given">الرصيد الآجل الممنوح</string>
+    <string name="rep_payments_received">الدفعات المستلمة</string>
+    <string name="rep_owed_now">المستحق على العملاء الآن</string>
+    <string name="rep_by_product">المبيعات حسب المنتج</string>
+    <string name="rep_by_method">المبيعات حسب طريقة الدفع</string>
+    <string name="rep_sales_list">جدول المبيعات</string>
+    <string name="rep_row_count">%1$s عملية</string>
+
+    <string name="rep_empty_title">لا مبيعات في هذه الفترة</string>
+    <string name="rep_empty_message">اختر فترة أخرى أو سجّل بيعاً جديداً.</string>
+
+    <string name="rep_export_pdf">تصدير PDF</string>
+    <string name="rep_share">مشاركة</string>
+    <string name="rep_print">طباعة</string>
+    <string name="rep_pdf_ready">ملف التقرير جاهز</string>
+    <string name="rep_pdf_ready_hint">شارك الملف أو اطبعه.</string>
+    <string name="rep_pdf_failed">تعذّر إنشاء ملف PDF. حاول مرة أخرى.</string>
+    <string name="rep_share_title">مشاركة التقرير</string>
+    <string name="rep_print_job">تقرير رصيد</string>
+
+    <string name="rep_month_1">يناير</string>
+    <string name="rep_month_2">فبراير</string>
+    <string name="rep_month_3">مارس</string>
+    <string name="rep_month_4">أبريل</string>
+    <string name="rep_month_5">مايو</string>
+    <string name="rep_month_6">يونيو</string>
+    <string name="rep_month_7">يوليو</string>
+    <string name="rep_month_8">أغسطس</string>
+    <string name="rep_month_9">سبتمبر</string>
+    <string name="rep_month_10">أكتوبر</string>
+    <string name="rep_month_11">نوفمبر</string>
+    <string name="rep_month_12">ديسمبر</string>
+
+    <string name="rep_pdf_title">تقرير المبيعات</string>
+    <string name="rep_pdf_period">الفترة: من %1$s إلى %2$s</string>
+    <string name="rep_pdf_generated">تاريخ الإصدار: %1$s</string>
+    <string name="rep_pdf_summary">الملخص</string>
+    <string name="rep_pdf_total_sales">إجمالي المبيعات</string>
+    <string name="rep_pdf_sales_count">عدد عمليات البيع</string>
+    <string name="rep_pdf_credit_given">الرصيد الآجل الممنوح</string>
+    <string name="rep_pdf_payments_received">الدفعات المستلمة</string>
+    <string name="rep_pdf_outstanding">المستحق على العملاء وقت الإصدار</string>
+    <string name="rep_pdf_by_product">المبيعات حسب المنتج</string>
+    <string name="rep_pdf_by_method">المبيعات حسب طريقة الدفع</string>
+    <string name="rep_pdf_sales">جدول المبيعات</string>
+    <string name="rep_pdf_payments">الدفعات المستلمة من العملاء</string>
+    <string name="rep_pdf_col_date">التاريخ</string>
+    <string name="rep_pdf_col_product">المنتج</string>
+    <string name="rep_pdf_col_customer">العميل</string>
+    <string name="rep_pdf_col_method">الدفع</string>
+    <string name="rep_pdf_col_amount">المبلغ</string>
+    <string name="rep_pdf_col_status">الحالة</string>
+    <string name="rep_pdf_col_count">العدد</string>
+    <string name="rep_pdf_col_note">ملاحظة</string>
+    <string name="rep_pdf_no_sales">لا مبيعات في هذه الفترة</string>
+    <string name="rep_pdf_page">صفحة %1$s</string>
+</resources>

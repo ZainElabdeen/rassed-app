@@ -1,118 +1,120 @@
-# رصيد (Raseed)
+**🌐 Language:** **English** · [العربية](README.ar.md)
 
-**رصيد** تطبيق أندرويد عربي أولاً لبائعي رصيد الاتصالات (الشحن والتعبئة) في السودان. يعمل على هاتف واحد بلا حساب وبلا خادم وبلا اتصال بالإنترنت. يسجّل كل عملية بيع رصيد في بضع ضغطات، ويحفظ المخزون وديون العملاء وإجماليات الشهر بدقة.
+# Raseed (رصيد)
 
-> التطبيق أندرويد أصلي (Kotlin وJetpack Compose وMaterial 3 وRoom). وهو ليس React Native ولا Expo.
+**Raseed** is an Arabic-first Android app for mobile airtime (top-up) sellers in Sudan. It runs on a single phone with no account, no server and no internet connection. It records each credit sale in a few taps and keeps stock, customer debts and monthly totals accurate.
 
-## الميزات
+> The app is native Android (Kotlin, Jetpack Compose, Material 3, Room). It is not React Native or Expo.
 
-| القسم | ما يفعله |
+## Features
+
+| Area | What it does |
 |---|---|
-| **الرئيسية** | مبيعات هذا الشهر، وإجمالي ما على العملاء، وبطاقة لكل منتج تعرض المتبقي من المخزون مقابل المتاح هذا الشهر. يظهر تنبيه إذا لم يُحدَّد رصيد للشهر الحالي. وفي أسفل الشاشة زر كبير **بيع جديد**. |
-| **بيع جديد** | اختر المنتج، وأدخل المبلغ، واختر **نقدي** أو **بنكك** أو **آجل**. العميل اختياري في النقدي وبنكك، وإلزامي في الآجل، ويمكن إضافة عميل جديد من الورقة نفسها. يظهر تحذير إن زاد المبلغ عن المخزون المتاح، ويمكنك المتابعة رغم ذلك. |
-| **المبيعات** | السجل من الأحدث إلى الأقدم، مع فلتر حسب المنتج وطريقة الدفع. تحمل المبيعات الآجلة وسم «مدفوع» أو «مدفوع جزئياً» أو «غير مدفوع». حذف البيع (بعد التأكيد) يعيد المخزون والدين. |
-| **العملاء** | إضافة العملاء وتعديلهم وحذفهم وعرضهم. تعرض شاشة العميل الرصيد المستحق، وأنواع الرصيد التي اشتراها، وسجلاً مؤرَّخاً بالمبيعات والدفعات. لا يمكن حذف عميل ما زال عليه رصيد مستحق. |
-| **الدفعات** | تسجيل دفعة لاحقة على حساب العميل بتاريخها الخاص وطريقتها (نقدي أو بنكك). |
-| **المنتجات والمخزون** | ثلاثة منتجات افتراضية: زين وسوداني وMTN. يمكن إضافة منتج بأي اسم، وحذف أي منتج بما فيها الافتراضية. تحديد رصيد بداية الشهر، وإضافة رصيد أو خصمه مع ذكر السبب، وعرض سجل المخزون بتواريخه. |
-| **البحث** | بحث واحد في العملاء والمنتجات والمبيعات والدفعات وسجل المخزون، بالاسم أو الهاتف أو المبلغ أو طريقة الدفع أو الملاحظة أو السبب أو التاريخ. يتجاهل التشكيل واختلاف أشكال الألف، ويقبل الأرقام العربية الهندية. |
-| **التقارير** | تقرير شهري وتقرير بنطاق تواريخ مخصص على الشاشة: إجمالي المبيعات، والمبيعات حسب المنتج وحسب طريقة الدفع، والرصيد الآجل الممنوح، والدفعات المستلمة، وإجمالي المستحق، وجدول المبيعات. يُصدَّر كل تقرير بصيغة PDF عربية من اليمين إلى اليسار للمشاركة أو الطباعة. |
-| **الإعدادات** | تصدير كل البيانات إلى ملف واحد، واستيرادها مع التحقق، والتبديل بين العربية (الافتراضية) والإنجليزية. |
+| **Home** | This month's sales, the total owed by customers, and a card per product showing remaining stock against what was available this month. A notice appears if no stock has been set for the current month. A large **New sale** button sits at the bottom. |
+| **New sale** | Pick the product, enter the amount, and choose **Cash**, **Bankak** or **Pay later**. A customer is optional for cash and Bankak, required for pay later, and a new customer can be added from the same sheet. If the amount exceeds available stock you get a warning and can still continue. |
+| **Sales** | History from newest to oldest, filtered by product and payment method. Pay-later sales are labelled Paid, Partly paid or Unpaid. Deleting a sale (after confirmation) restores the stock and the debt. |
+| **Customers** | Add, edit, delete and view customers. A customer's screen shows the balance owed, the credit types they bought, and a dated history of sales and payments. A customer who still owes money cannot be deleted. |
+| **Payments** | Record a later payment against a customer's account, with its own date and method (cash or Bankak). |
+| **Products and stock** | Three default products: Zain, Sudani and MTN. Add a product with any name, and remove any product, defaults included. Set the month's opening stock, add or deduct stock with a reason, and view the dated stock log. |
+| **Search** | One search across customers, products, sales, payments and the stock log, by name, phone, amount, payment method, note, reason or date. It ignores diacritics and Arabic alef variants, and accepts Arabic-Indic digits. |
+| **Reports** | A monthly report and a custom date-range report on screen: total sales, sales by product and by payment method, credit given, payments received, total owed, and a sales table. Each report exports as a right-to-left Arabic PDF to share or print. |
+| **Settings** | Export all data to one file, import it with validation, and switch between Arabic (default) and English. |
 
-## كيف تُحسب الأرقام
+## How the numbers work
 
-- المبالغ أعداد صحيحة بالجنيه السوداني، مخزَّنة بنوع `Long` ومعروضة بأرقام لاتينية (`1,500`). التواريخ مخزَّنة بالمللي ثانية.
-- مبلغ البيع هو قيمة الرصيد المباع، ويُخصم من المخزون بالقيمة نفسها (1:1)، لذلك لا يوجد سعر شراء ولا ربح.
-- **رصيد العميل** = مجموع المبيعات الآجلة − مجموع الدفعات.
-- **التسوية:** تُوزَّع الدفعة على أقدم المبيعات الآجلة أولاً (FIFO)، وبذلك تُحدَّد حالة كل بيع: مدفوع أو جزئي أو غير مدفوع.
-- **المخزون** = رصيد بداية الشهر الحالي + الإضافات − الخصومات − مبيعات المنتج منذ ذلك الحين.
-- **حذف منتج** يؤرشفه فقط. تحتفظ المبيعات القديمة باسم المنتج وقت البيع، فتبقى السجلات والتقارير سليمة. وتُنشأ المنتجات الافتراضية مرة واحدة عند إنشاء قاعدة البيانات، فلا يعود المنتج الافتراضي المحذوف.
-- **حذف عميل** يحذف العميل وحده. تبقى مبيعاته ودفعاته في السجل والتقارير بوسم «عميل محذوف».
+- Amounts are whole Sudanese pounds, stored as `Long` and shown with Latin digits (`1,500`). Dates are stored in milliseconds.
+- A sale's amount is the airtime value sold. It is deducted from stock at the same value (1:1), so there is no purchase price and no profit figure.
+- **Customer balance** = total pay-later sales − total payments.
+- **Settlement:** a payment is applied to the oldest pay-later sales first (FIFO). That decides each sale's status: paid, partly paid or unpaid.
+- **Stock** = this month's opening stock + additions − deductions − the product's sales since then.
+- **Removing a product** only archives it. Old sales keep the product name from the time of sale, so records and reports stay intact. The default products are created once, when the database is created, so a removed default does not come back.
+- **Deleting a customer** deletes only the customer. Their sales and payments stay in the history and reports, labelled "Deleted customer".
 
-## تخزين البيانات
+## Data storage
 
-كل شيء محفوظ على الهاتف في قاعدة بيانات Room (SQLite). ويحفظ DataStore اختيار اللغة فقط. لا يغادر شيء الجهاز إلا إذا صدّرت نسخة احتياطية أو شاركت ملف PDF.
+Everything is stored on the phone in a Room (SQLite) database. DataStore holds only the language choice. Nothing leaves the device unless you export a backup or share a PDF.
 
-| الجدول | الحقول |
+| Table | Fields |
 |---|---|
-| `Product` | المعرّف (ثابت: `zain` و`sudani` و`mtn`، أو UUID)، الاسم، الترتيب، مؤرشف، تاريخ الإنشاء |
-| `Customer` | المعرّف، الاسم، الهاتف (اختياري)، تاريخ الإنشاء |
-| `Sale` | المعرّف، معرّف المنتج، اسم المنتج (نسخة وقت البيع)، المبلغ، معرّف العميل (اختياري)، تاريخ الإنشاء، الطريقة (`CASH` / `BANKAK` / `CREDIT`) |
-| `Payment` | المعرّف، معرّف العميل، المبلغ، تاريخ الدفع، الطريقة (`CASH` / `BANKAK`)، ملاحظة (اختيارية) |
-| `StockEntry` | المعرّف، معرّف المنتج، النوع (`OPENING` / `ADD` / `DEDUCT`)، المبلغ، السبب، تاريخ الإنشاء |
+| `Product` | id (stable: `zain`, `sudani`, `mtn`, or a UUID), name, sort order, archived, created at |
+| `Customer` | id, name, phone (optional), created at |
+| `Sale` | id, product id, product name (snapshot at sale time), amount, customer id (optional), created at, method (`CASH` / `BANKAK` / `CREDIT`) |
+| `Payment` | id, customer id, amount, paid at, method (`CASH` / `BANKAK`), note (optional) |
+| `StockEntry` | id, product id, kind (`OPENING` / `ADD` / `DEDUCT`), amount, reason, created at |
 
-لا توجد مفاتيح أجنبية بحذف متسلسل، ولهذا لا يفسد حذف منتج أو عميل السجلات القديمة.
+There are no cascading foreign keys, which is why removing a product or customer never corrupts old records.
 
-## النسخ الاحتياطي والاستعادة
+## Backup and restore
 
-- **التصدير:** يكتب ملف JSON واحداً فيه الجداول الخمسة كلها (بما فيها المنتجات المؤرشفة). وفي رأسه `format` (قيمته `raseed-backup`) و`schemaVersion` و`exportedAt` وعدد الصفوف لكل جدول وبصمة SHA-256 للبيانات. تحفظه عبر منتقي الملفات في النظام أو تشاركه.
-- **الاستيراد:** يقرأ الملف ويتحقق منه **قبل لمس أي بيانات**، ويرفضه إذا:
-  - لم يكن JSON صالحاً أو كان اسم الصيغة خاطئاً؛
-  - كتبه إصدار أحدث من التطبيق؛
-  - لم تطابق البصمة أو أعداد الصفوف؛
-  - تكرر معرّف؛
-  - أشار بيع أو حركة مخزون إلى منتج غير موجود؛
-  - كان مبلغ خارج النطاق، أو طريقة أو نوع غير معروف، أو بيع آجل بلا عميل.
-- يُعرض الملف الصالح للتأكيد لأن الاستيراد **يستبدل كل البيانات الحالية**. ويجري الاستبدال داخل معاملة واحدة في قاعدة البيانات، فإن فشل شيء تراجعت كلها وبقيت بيانات الهاتف كما كانت.
-- للانتقال إلى هاتف جديد: صدّر من الهاتف القديم، وانقل الملف، واستورده في الهاتف الجديد.
+- **Export:** writes one JSON file containing all five tables (archived products included). Its header holds `format` (value `raseed-backup`), `schemaVersion`, `exportedAt`, a row count per table and a SHA-256 checksum of the data. You save it through the system file picker or share it.
+- **Import:** reads and validates the file **before touching any data**, and rejects it if:
+  - it is not valid JSON or has the wrong format name;
+  - it was written by a newer version of the app;
+  - the checksum or row counts do not match;
+  - an id is duplicated;
+  - a sale or stock entry points to a product that does not exist;
+  - an amount is out of range, a method or kind is unknown, or a pay-later sale has no customer.
+- A valid file is shown for confirmation, because import **replaces all current data**. The replacement runs in a single database transaction, so if anything fails it is rolled back and the phone's data stays as it was.
+- To move to a new phone: export on the old phone, copy the file across, and import it on the new one.
 
-## تقارير PDF
+## PDF reports
 
-تُرسم التقارير بأدوات أندرويد المدمجة `PdfDocument` و`StaticLayout`، فتخرج الحروف العربية متصلة بشكل صحيح والنص من اليمين إلى اليسار دون مكتبة PDF خارجية. الصفحات بحجم A4 ويمكن أن تمتد إلى عدة صفحات. تتم المشاركة عبر `FileProvider` وتتم الطباعة عبر `PrintManager`.
+Reports are drawn with Android's built-in `PdfDocument` and `StaticLayout`, so Arabic letters join correctly and text runs right to left, with no external PDF library. Pages are A4 and can run to several pages. Sharing goes through `FileProvider` and printing through `PrintManager`.
 
-يستخدم ملف PDF الخط العربي المثبّت في الهاتف ولا يتضمن التطبيق ملف خط. لاستخدام خط معيّن، أضف ملف `.ttf` إلى `res/font` واستخدمه في `pdf/ReportPdf.kt`.
+The PDF uses the Arabic font installed on the phone; the app ships no font file. To use a specific font, add a `.ttf` to `res/font` and use it in `pdf/ReportPdf.kt`.
 
-## اللغة والاتجاه
+## Language and direction
 
-العربية هي الافتراضية والواجهة من اليمين إلى اليسار. الإنجليزية متاحة من الإعدادات، ويتبع اتجاه الواجهة اللغة المختارة. النصوص في `res/values/` (العربية) و`res/values-en/` (الإنجليزية). المظهر فاتح دائماً في كل إعدادات النظام.
+Arabic is the default and the interface is right to left. English is available in Settings, and the layout direction follows the chosen language. Strings live in `res/values/` (Arabic) and `res/values-en/` (English). The appearance is light in every system setting.
 
-## التقنيات المستخدمة
+## Tech stack
 
-- Kotlin 2.4 وJetpack Compose مع Material 3 (Compose BOM 2026.09.00)
-- Room 2.8 مع KSP لقاعدة بيانات SQLite
-- DataStore Preferences لحفظ اللغة
-- Navigation Compose وLifecycle ViewModel مع شريط تنقل سفلي
-- kotlinx.serialization لملف النسخ الاحتياطي
-- Android Gradle Plugin 9.4 و`minSdk` 24 (أندرويد 7) و`targetSdk` 36 وJava 17
+- Kotlin 2.4 and Jetpack Compose with Material 3 (Compose BOM 2026.09.00)
+- Room 2.8 with KSP for the SQLite database
+- DataStore Preferences for the language
+- Navigation Compose and Lifecycle ViewModel, with a bottom navigation bar
+- kotlinx.serialization for the backup file
+- Android Gradle Plugin 9.4, `minSdk` 24 (Android 7), `targetSdk` 36, Java 17
 
-لا توجد مكتبة للصور أو للشبكة أو لملفات PDF. الإصدارات مثبّتة في `android/gradle/libs.versions.toml`.
+There is no image, network or PDF library. Versions are pinned in `android/gradle/libs.versions.toml`.
 
-## هيكل المشروع
+## Project structure
 
 ```
 android/app/src/main/java/app/injaz/starter/
-├── MainActivity.kt, RaseedApp.kt     نقطة الدخول وفئة التطبيق
-├── data/                             كيانات Room والاستعلامات وقاعدة البيانات والمستودع وحفظ الإعدادات
-├── domain/                           منطق نقي بلا أنواع أندرويد أو Room
-│   ├── Balances.kt                   رصيد العميل وتسوية FIFO
-│   ├── Inventory.kt                  حساب المخزون
-│   ├── DateRanges.kt                 حدود الشهر والنطاقات
-│   ├── ReportBuilder.kt              إجماليات التقرير وتفصيلاته
-│   ├── Backup.kt                     صيغة النسخة الاحتياطية والبصمة والتحقق
-│   ├── Search.kt                     توحيد النصوص والمطابقة
-│   └── Money.kt, Validation.kt       التنسيق وفحص المدخلات
-├── pdf/                              ReportPdf.kt (رسم PDF)، PrintAdapter.kt
+├── MainActivity.kt, RaseedApp.kt     entry point and application class
+├── data/                             Room entities, DAOs, database, repository, settings store
+├── domain/                           pure logic, no Android or Room types
+│   ├── Balances.kt                   customer balance and FIFO settlement
+│   ├── Inventory.kt                  stock calculation
+│   ├── DateRanges.kt                 month and range boundaries
+│   ├── ReportBuilder.kt              report totals and breakdowns
+│   ├── Backup.kt                     backup format, checksum, validation
+│   ├── Search.kt                     text normalisation and matching
+│   └── Money.kt, Validation.kt       formatting and input checks
+├── pdf/                              ReportPdf.kt (PDF drawing), PrintAdapter.kt
 └── ui/
-    ├── AppNav.kt                     التبويبات والمسارات
-    ├── theme/, kit/, common/         السمة والمكوّنات المشتركة والمساعدات
+    ├── AppNav.kt                     tabs and routes
+    ├── theme/, kit/, common/         theme, shared components, helpers
     └── home/ sales/ customers/ products/ reports/ settings/ more/ search/
-                                      مجلد لكل شاشة مع ViewModel الخاص بها
-android/app/src/test/java/.../domain/ اختبارات الوحدة للمنطق
+                                      one folder per screen, with its ViewModel
+android/app/src/test/java/.../domain/ unit tests for the logic
 ```
 
-## البناء والتشغيل
+## Build and run
 
-المتطلبات: Android Studio مع JDK 17 وAndroid SDK (compile SDK 37).
+Requirements: Android Studio with JDK 17 and the Android SDK (compile SDK 37).
 
-1. افتح مجلد **`android/`** في Android Studio واترك Gradle يكمل المزامنة.
-2. اختر جهازاً أو محاكياً بأندرويد 7.0 (API 24) أو أحدث، ثم اضغط **Run**.
-3. شغّل اختبارات الوحدة بالأمر `./gradlew testDebugUnitTest` من مجلد `android/`، أو من مشغّل الاختبارات في Android Studio.
-4. لبناء ملف للتثبيت أو النشر، استخدم **Build ← Generate Signed App Bundle / APK** في Android Studio ووقّعه بمفتاحك الخاص. لا يحتوي المشروع على إعداد توقيع ولا على مفاتيح. احتفظ بملف المفاتيح وكلمات مروره خارج المستودع.
+1. Open the **`android/`** folder in Android Studio and let Gradle finish syncing.
+2. Choose a device or emulator running Android 7.0 (API 24) or newer, then press **Run**.
+3. Run the unit tests with `./gradlew testDebugUnitTest` from the `android/` folder, or from Android Studio's test runner.
+4. To build a file for installing or publishing, use **Build → Generate Signed App Bundle / APK** in Android Studio and sign it with your own key. The project has no signing configuration and contains no keys. Keep the keystore and its passwords out of the repository.
 
-تغطي اختبارات الوحدة الأرصدة والتسوية والمخزون وحدود التواريخ وتنسيق المبالغ والتحقق من المدخلات وإجماليات التقارير والتحقق من النسخ الاحتياطي والبحث.
+The unit tests cover balances, settlement, stock, date boundaries, money formatting, input validation, report totals, backup validation and search.
 
-## النطاق والحدود
+## Scope and limits
 
-- جهاز واحد ومستخدم واحد. لا حسابات ولا مزامنة بين الأجهزة ولا مشاركة بيانات بين الأشخاص. الملف الاحتياطي هو وسيلة نقل البيانات.
-- **بنكك** مجرد وسم يسجّله البائع يدوياً، ولا يوجد ربط بالدفع.
-- غير متضمَّن: عملات متعددة، وأسعار الشراء والأرباح، والإشعارات، وتعدد المستخدمين.
-- يعتمد شكل ملف PDF على الخط العربي المثبّت في الهاتف.
+- One device, one user. No accounts, no sync between devices, no sharing data between people. The backup file is how data moves.
+- **Bankak** is only a label the seller records by hand; there is no payment integration.
+- Not included: multiple currencies, purchase prices and profit, notifications, multiple users.
+- How the PDF looks depends on the Arabic font installed on the phone.
